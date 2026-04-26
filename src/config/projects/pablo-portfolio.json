@@ -1,0 +1,58 @@
+{
+    "id": "pablo-portfolio",
+    "title": "Portafolio Personal",
+    "description": "Portafolio personal interactivo con diseño estilo macOS. Incluye secciones de experiencia, educación, habilidades y proyectos. Construido con Astro.js, React, Tailwind CSS y TypeScript.",
+    "repoUrl": "https://github.com/pvbloantonio",
+    "liveUrl": "https://pabloelgueta.cl",
+    "techStack": [
+        "Astro",
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        "Vercel"
+    ],
+    "structure": {
+        "root": "portfolio-master",
+        "children": [
+            {
+                "name": "src",
+                "type": "directory",
+                "children": [
+                    {
+                        "name": "components",
+                        "type": "directory"
+                    },
+                    {
+                        "name": "config",
+                        "type": "directory"
+                    },
+                    {
+                        "name": "layouts",
+                        "type": "directory"
+                    },
+                    {
+                        "name": "pages",
+                        "type": "directory"
+                    }
+                ]
+            },
+            {
+                "name": "public",
+                "type": "directory"
+            },
+            {
+                "name": "astro.config.mjs",
+                "type": "file"
+            },
+            {
+                "name": "package.json",
+                "type": "file"
+            },
+            {
+                "name": "tsconfig.json",
+                "type": "file"
+            }
+        ]
+    },
+    "images": []
+}
