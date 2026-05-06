@@ -11,7 +11,6 @@ import {
   IoCall,
   IoHelpCircle,
 } from 'react-icons/io5';
-import { VscVscode } from 'react-icons/vsc';
 import { userConfig } from '../../config/index';
 
 type MenuItem = {
@@ -91,11 +90,7 @@ export default function MacToolbar({
     return `${hour}:${minute}`;
   };
 
-  const handleVSCodeClick = () => {
-    window.location.href = 'vscode:/';
-  };
-
-  const handleMenuClick = (menu: string) => {
+const handleMenuClick = (menu: string) => {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
 
@@ -289,12 +284,6 @@ export default function MacToolbar({
           ))}
         </div>
         <div className='flex items-center space-x-4'>
-          <VscVscode
-            size={16}
-            className='cursor-pointer hover:opacity-80 transition-opacity'
-            onClick={handleVSCodeClick}
-            title='Abrir en VSCode'
-          />
           <MdWifi size={16} />
           <IoSearchSharp
             size={16}
